@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./sass/main.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <div class="container">
       <div class="header">
         <nav class="header__navigation">
-          <svg width="265px" height="130px">
+          <svg class="header__logo" width="265px" height="130px">
             <use href="./img/sprite.svg#DaVinci"></use>
           </svg>
           <ul class="header__navigation-list">
@@ -52,42 +52,55 @@
         </picture>
       </div>
     </section>
+    <section class="advantages">
+      <ul class="advantages__list">
+        <li class="advantages__item"> Маленькі класи </li>
+        <li class="advantages__item"> Ключова перевага </li>
+      </ul>
+    </section>
     <section class="benefits">
       <div class="container">
         <ul class="benefits-list">
           <li class="benefits-list__item benefits-list__item--afterschool1">
             <p>Підготовка до школи (5 - 6 років)</p>
           </li>
-          <li class="benefits-list__item benefits-list__item--afterschool1">
+          <li class="benefits-list__item benefits-list__item--afterschool2">
             <p>Альтернативна школа (1 - 4 класи)</p>
           </li>
-          <li class="benefits-list__item benefits-list__item--afterschool1">
+          <li class="benefits-list__item benefits-list__item--afterschool3">
             <p>Afterschool</p>
           </li>
-          <li class="benefits-list__item benefits-list__item--afterschool1">
+          <li class="benefits-list__item benefits-list__item--afterschool4">
             <p>Літній табір</p>
           </li>
         </ul>
       </div>
+      <div class="benefits-line"></div>
     </section>
     <section class="offer">
       <div class="container">
-        <ul>
-          <li>
-            <img src="" alt="">
+        <ul class="offer__list">
+          <li class="offer__item">
+            <img class="offer__image" src="./img/offer/offer1.jpg" alt="">
+            <div class="offer__modal">
+              <h3>Що ми пропонуємо І</h3>
+              <p>текст ек5невн ке6н6н6 г6гк6
+                6г6кг7нго6е горнего нгнего 6нег6е гне
+                е6не6неа неогенгоа неора неоа
+                енортаенононононоа</p>
+              <button>Записатися на консультацію</button>
+            </div>
           </li>
-          <li>
-            <h3></h3>
-            <p></p>
-            <button>Записатися на консультацію</button>
-          </li>
-          <li>
-            <img src="" alt="">
-          </li>
-          <li>
-            <h3></h3>
-            <p></p>
-            <button>Дізнатися більше про школу</button>
+          <li class="offer__item">
+            <div class="offer__modal">
+              <h3>Що ми пропонуємо ІІ</h3>
+              <p>текст ек5невн ке6н6н6 г6гк6
+                6г6кг7нго6е горнего нгнего 6нег6е гне
+                е6не6неа неогенгоа неора неоа
+                енортаенононононоа</p>
+              <button>Дізнатися більше про школу</button>
+            </div>
+            <img class="offer__image" src="./img/offer/offer2.jpg" alt="">
           </li>
         </ul>
       </div>
