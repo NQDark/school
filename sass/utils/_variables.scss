@@ -1,0 +1,19 @@
+$colors: (
+    "primary-text": #000000,
+    "secondary-text": #745656,
+    "contact-text": #00BEB0,
+    "footer-text": #A79B8C,
+    "primary-fon": #ffffff,
+    "secondary-fon":#FFF3EA,
+    "footer-fon":#3F3434,
+    "button": #EF5874,
+    "accent": #2196f3,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+
+$mobile-width: 700px;
+$desktop-width: 1600px;

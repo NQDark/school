@@ -1,0 +1,48 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.footer__map {
+    width: 700px;
+}
+
+.footer__contacts {
+    font: 700 30px 'Roboto', normal;
+    color: getColor("primary-fon");
+    flex: 0 0 35%
+}
+
+.footer__contacts-header {
+    font: 700 30px 'Roboto', normal;
+    color: getColor("primary-fon");
+    margin-bottom: 40px;
+}
+
+.footer__contacts {
+    font: 500 24px 'Roboto', normal;
+    color: getColor("footer-text");
+}
+
+.footer__contacts-item {
+    display: flex;
+
+
+}
+
+.footer__contacts-icon {
+    display: flex;
+    margin-right: 30px;
+    fill: getColor("button");
+    justify-content: center;
+}
+
+
+.footer__contacts-link {
+    display: inline-flex;
+    justify-content: center;
+    padding: 10px 0;
+    align-items: center;
+
+}

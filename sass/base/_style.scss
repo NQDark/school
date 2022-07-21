@@ -1,0 +1,70 @@
+body {
+    font: 400 14px 'Roboto', sans-serif;
+    margin: 0;
+    color: getColor("primary-text");
+    background-color: getColor("primary-fon");
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    color: getColor("footer-text");
+}
+
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    margin: auto 0;
+    width: 100%;
+}
+
+button {
+    font: 700 18px 'Roboto', normal;
+    line-height: 21px;
+    align-items: center;
+    text-align: center;
+    width: 300px; 
+    padding: 19px 40px;
+    color: getColor("primary-fon");
+    background-color: getColor("button");
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+address {
+    display: block;
+    font-style: normal;
+    text-decoration: none;
+}
+
+footer {
+    margin: 0 auto;
+    display: flex;
+    padding: 90px 215px;
+    color: getColor("secondary-text");
+    background-color: getColor("footer-fon");
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}

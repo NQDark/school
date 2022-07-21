@@ -1,0 +1,38 @@
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: getColor("secondary-fon");
+}
+
+.benefits-list__item {
+    text-align: center;
+    width: 200px;
+    padding: 250px 0 100px 0;
+
+    &::before {
+        display: block;
+        content: "";
+        height: 200px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: getColor("secondary-fon");
+    }
+
+    &--afterschool1::before {
+        background-image: url(../../img/benefits/afterschool1.png);
+    }
+
+    &--afterschool1::before {
+        background-image: url(../../img/benefits/afterschool1.png);
+    }
+
+    &--afterschool1::before {
+        background-image: url(../../img/benefits/afterschool1.png);
+    }
+
+    &--afterschool1::before {
+        background-image: url(../../img/benefits/afterschool1.png);
+    }
+}
