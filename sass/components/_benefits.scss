@@ -1,8 +1,11 @@
+.benefits {
+    background-color: getColor("secondary-fon");
+}
+
 .benefits-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: getColor("secondary-fon");
 }
 
 .benefits-list__item {
@@ -37,11 +40,10 @@
     }
 }
 
-.benefits-line {
+.benefits__line {
+    width: 1200px;
     margin: 0 auto;
-    width: 70%;
     height: 8px;
     background: getColor("contact-text");
     border-radius: 4px;
-
 }

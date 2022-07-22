@@ -1,0 +1,25 @@
+.history-school {
+    padding: 100px 0;
+}
+
+.history-school__list {
+    display: flex;
+    width: 1600px;
+    height: 480px;
+    margin: 0 auto;
+}
+
+
+.history-school__item {
+    text-align:center;
+    font: 700 36px 'Roboto', normal;
+    width: 100%;
+    height: 100%;
+    padding: 175px 200px;
+    color: getColor('primary-fon');
+    background-image: url(../../img/history-school/history-school-fon.jpg);
+
+    &:last-child {
+        background-image: url(../../img/history-school/history-school-davinci.png);
+    }
+}

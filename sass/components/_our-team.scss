@@ -1,0 +1,35 @@
+.our-team__list {
+    display: flex;
+    padding: 100px 0 200px 0;
+ 
+}
+
+.our-team__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 650px;
+    margin-right: 15px;
+    padding-bottom: 30px;
+    background-color: getColor('secondary-fon');
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.our-team__image {
+    height: 450px;
+    margin: 0;
+}
+
+.our-team__line {
+    width: 1600px;
+    margin: 0 auto;
+    height: 8px;
+    background: getColor("contact-text");
+    border-radius: 4px;
+}
+
+

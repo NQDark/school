@@ -5,14 +5,20 @@ body {
     background-color: getColor("primary-fon");
 }
 
-h1,
-h2,
-h3 {
+h1 {
     margin: 0;
 }
 
-h3 {
+h2 {
+    text-align: center;
+    font: 700 48px 'Roboto', normal;
+    margin: 0;
+    color: getColor("secondary-text");
+}
+
+h3 {    
     font: 700 36px 'Roboto', normal;
+    margin: 0;
     color: getColor("secondary-text");
 }
 
@@ -42,10 +48,9 @@ img {
 
 button {
     font: 700 18px 'Roboto', normal;
-    line-height: 21px;
     align-items: center;
     text-align: center;
-    width: 300px; 
+    width: 300px;
     padding: 19px 40px;
     color: getColor("primary-fon");
     background-color: getColor("button");
@@ -62,14 +67,15 @@ address {
 }
 
 footer {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
-    padding: 90px 215px;
+    padding: 100px 0;
     color: getColor("secondary-text");
     background-color: getColor("footer-fon");
 }
 
 .container {
-    width: 1600px;
+    width: 1200px;
     margin: 0 auto;
 }
+
