@@ -238,10 +238,7 @@ address {
 
 footer {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 100px 0;
+  padding: 100px 0 50px 0;
   color: #745656;
   background-color: #3F3434;
 }
@@ -365,7 +362,7 @@ footer {
 .benefits-list__item {
   text-align: center;
   width: 200px;
-  padding: 200px 0 50px 0;
+  padding: 150px 0 50px 0;
 }
 
 .benefits-list__item::before {
@@ -431,30 +428,43 @@ footer {
 }
 
 .history-school {
-  padding: 100px 0;
-}
-
-.history-school__list {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1600px;
-  height: 480px;
-  margin: 0 auto;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.history-school__fon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: 700 36px 'Roboto', normal;
+  width: 100%;
+  height: 500px;
+  color: #ffffff;
+  background-image: url(../../img/history-school/history-fon.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.history-school__text {
+  position: absolute;
+  text-align: center;
+  width: 400px;
+  right: 300px;
 }
 
 .history-school__item {
-  text-align: center;
-  font: 700 36px 'Roboto', normal;
   width: 100%;
-  height: 100%;
-  padding: 175px 200px;
-  color: #ffffff;
-  background-image: url(../../img/history-school/history-school-fon.jpg);
-}
-
-.history-school__item:last-child {
-  background-image: url(../../img/history-school/history-school-davinci.png);
+  background-image: url(../../img/history-school/history-Da-Vinchi.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .our-team__list {
@@ -492,7 +502,7 @@ footer {
 }
 
 .our-team__line {
-  width: 1600px;
+  width: 100%;
   margin: 0 auto;
   height: 8px;
   background: #00BEB0;
@@ -543,8 +553,9 @@ footer {
 }
 
 .feedback__image {
-  width: 100px;
-  margin: 0;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .feedback__item-card {
@@ -627,6 +638,7 @@ footer {
 
 .footer__map {
   width: 700px;
+  margin-bottom: 100px;
 }
 
 .footer__contacts {
@@ -651,6 +663,10 @@ footer {
   display: flex;
 }
 
+.footer__contacts-item:last-child {
+  padding: 10px 0;
+}
+
 .footer__contacts-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -673,6 +689,34 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__contacts-link:hover {
+  color: #00BEB0;
+}
+
+address:hover {
+  color: #00BEB0;
+  cursor: pointer;
+}
+
+.footer__clock:hover {
+  color: #00BEB0;
+  cursor: pointer;
+}
+
+.footer__line {
+  width: 100%;
+  height: 1px;
+  background: #85796A;
+  border-radius: 1px;
+}
+
+.footer_davinci {
+  font: 500 24px 'Roboto', normal;
+  margin-left: -100px;
+  padding-top: 50px;
+  color: #A79B8C;
 }
 
 .backdrop {

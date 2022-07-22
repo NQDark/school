@@ -1,25 +1,33 @@
 .history-school {
+    position: relative;
+    display: flex;
+    width: 100%;
     padding: 100px 0;
 }
 
-.history-school__list {
+.history-school__fon {
     display: flex;
-    width: 1600px;
-    height: 480px;
-    margin: 0 auto;
-}
-
-
-.history-school__item {
-    text-align:center;
+    position: relative;
+    align-items: center;
     font: 700 36px 'Roboto', normal;
     width: 100%;
-    height: 100%;
-    padding: 175px 200px;
+    height: 500px;
     color: getColor('primary-fon');
-    background-image: url(../../img/history-school/history-school-fon.jpg);
+    background-image: url(../../img/history-school/history-fon.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
 
-    &:last-child {
-        background-image: url(../../img/history-school/history-school-davinci.png);
-    }
+.history-school__text {
+    position: absolute;
+    text-align: center;
+    width: 400px;
+    right: 300px;
+}
+
+.history-school__item {
+    width: 100%;
+    background-image: url(../../img/history-school/history-Da-Vinchi.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }

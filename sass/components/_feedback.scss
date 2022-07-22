@@ -37,10 +37,13 @@
 
 }
 
-.feedback__image {
-    width: 100px;
-    margin: 0;
+.feedback__image { 
+    width: 150px; 
+    border-radius: 50%;
+    overflow: hidden;
 }
+
+
 
 .feedback__item-card {
     display: block;
