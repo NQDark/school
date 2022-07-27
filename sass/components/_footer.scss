@@ -2,11 +2,19 @@
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+
+    @media screen and (max-width: $mobile-width) {
+        padding-bottom: 300px;
+    }
 }
 
 .footer__map {
     width: 700px;
     margin-bottom: 100px;
+
+    @media screen and (max-width: $mobile-width) {
+        display: none;
+    }
 }
 
 .footer__contacts {
@@ -46,6 +54,7 @@
     justify-content: center;
     padding: 10px 0;
     align-items: center;
+    color: getColor('footer-text');
 
     &:hover {
         color: getColor('contact-text');
@@ -57,9 +66,14 @@ address:hover {
     cursor: pointer;
 }
 
-.footer__clock:hover {
-    color: getColor('contact-text');
-    cursor: pointer;
+.footer__clock {
+    font: 500 24px 'Roboto', normal;
+    color: getColor('footer-text');
+
+    &:hover {
+        color: getColor('contact-text');
+        cursor: pointer;
+    }
 }
 
 .footer__line {
@@ -74,4 +88,8 @@ address:hover {
     margin-left: -100px;
     padding-top: 50px;
     color: getColor('footer-text');
+
+    @media screen and (max-width: $mobile-width) {
+        margin: auto;
+    }
 }

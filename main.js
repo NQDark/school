@@ -24,9 +24,9 @@ closePopupButton?.addEventListener('click', () => {
 });
 
 // знаходимо елемент і записуємо його в змінну, яку можна далі використовувати
-const IIPopup = document.querySelector('.backdrop');
-const openIIPopupButton = document.querySelector('.offer__button');
-const closeHeaderPopupButton = document.querySelector('.modal__icon');
+const IIPopup = document.querySelector('.backdropII');
+const openIIPopupButton = document.querySelector('.offer__buttonII');
+const closeIIPopupButton = document.querySelector('.modal__iconII');
 
 // очікуємо коли якась дія виконається, в данному випадку click
 openIIPopupButton.addEventListener('click', () => {

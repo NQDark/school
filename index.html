@@ -48,7 +48,7 @@
       <div>
         <picture>
           <source media="(max-width:700px)" srcset="./img/hero/fonHero_mobile.jpg">
-          <img src="./img/hero/fonHero.jpg" alt="Учні">
+          <img class="hero_img" src="./img/hero/fonHero.jpg" alt="Учні">
         </picture>
       </div>
     </section>
@@ -98,9 +98,11 @@
                 6г6кг7нго6е горнего нгнего 6нег6е гне
                 е6не6неа неогенгоа неора неоа
                 енортаенононононоа</p>
-              <button type="button" class="offer__button">Дізнатися більше про школу</button>
+              <button type="button" class="offer__buttonII">Дізнатися більше про школу</button>
             </div>
-            <img class="offer__image" src="./img/offer/offer2.jpg" alt="">
+            <div class="offer__modal-img">
+              <img class="offer__image" src="./img/offer/offer2.jpg" alt="">
+            </div>
           </li>
         </ul>
       </div>
@@ -114,6 +116,7 @@
     </section>
     <section class="our-team">
       <div class="container">
+        <div class="our-team__line-top"></div>
         <h2>Наша команда</h2>
         <ul class="our-team__list">
           <li class="our-team__item">
@@ -139,7 +142,8 @@
           </li>
         </ul>
       </div>
-      <div class="our-team__line"></div>
+      <div class="our-team__line-bottom"></div>
+      <button type="button" class="our-team__button">Дізнатися більше про школу</button>
     </section>
     <section class="feedback">
       <div class="container">
@@ -163,8 +167,7 @@
                 voluptates tempora inventore corrupti, architecto nemo sint quis? Ut animi necessitatibus, quo
                 blanditiis vitae quis cumque molestiae totam quod, nisi corrupti maiores molestias culpa sequi labore
                 tempora assumenda tenetur velit aperiam? Culpa obcaecati iste, magnam at quibusdam alias cum nihil
-                expedita nobis mollitia minus tempore. Esse error ducimus quam, quis voluptatem, eveniet quas natus ab
-                cumque sequi temporibus sint. Natus voluptate accusantium voluptatum dolor ullam. Autem, facere.</p>
+                expedita nobis mollitia minus tempore.</p>
             </li>
             <li class="feedback__block">
               <div class="feedback__item">
@@ -182,9 +185,7 @@
                 consequuntur, facere aliquid qui
                 voluptates tempora inventore corrupti, architecto nemo sint quis? Ut animi necessitatibus, quo
                 blanditiis vitae quis cumque molestiae totam quod, nisi corrupti maiores molestias culpa sequi labore
-                tempora assumenda tenetur velit aperiam? Culpa obcaecati iste, magnam at quibusdam alias cum nihil
-                expedita nobis mollitia minus tempore. Esse error ducimus quam, quis voluptatem, eveniet quas natus ab
-                cumque sequi temporibus sint. Natus voluptate accusantium voluptatum dolor ullam. Autem, facere.</p>
+                tempora assumenda tenetur velit aperiam? Culpa obcaecati iste, magnam at quibusdam alias cum nihil.</p>
             </li>
             <li class="feedback__block">
               <div class="feedback__item">
@@ -202,9 +203,7 @@
                 consequuntur, facere aliquid qui
                 voluptates tempora inventore corrupti, architecto nemo sint quis? Ut animi necessitatibus, quo
                 blanditiis vitae quis cumque molestiae totam quod, nisi corrupti maiores molestias culpa sequi labore
-                tempora assumenda tenetur velit aperiam? Culpa obcaecati iste, magnam at quibusdam alias cum nihil
-                expedita nobis mollitia minus tempore. Esse error ducimus quam, quis voluptatem, eveniet quas natus ab
-                cumque sequi temporibus sint. Natus voluptate accusantium voluptatum dolor ullam. Autem, facere.</p>
+                tempora assumenda tenetur velit aperiam? Culpa obcaecati iste, magnam at quibusdam alias.</p>
             </li>
           </ul>
         </div>
@@ -265,6 +264,56 @@
   <div class="backdrop">
     <div class="modal">
       <div class="modal__icon">
+        <svg class="modal__icon-link" width="11px" height="11px">
+          <use href="./img/sprite.svg#modal__icon"></use>
+        </svg>
+      </div>
+      <div class="modal__container">
+        <form class="offer-form" autocomplete="off">
+          <h3 class="offer-form__title">Залишіть свої контакти і ми зв’яжемося з Вами найближчим часом</h3>
+          <div class="offer-form__label-container">
+            <label for="input-name" class="offer-form__label">Имя</label>
+            <div class="offer-form__icon-container">
+              <input id="input-name" class="offer-form__input" name="name" type="text">
+              <svg class="offer-form__icon" width="18px" height="18px">
+                <use href="./img/sprite.svg#form-icon-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="offer-form__label-container">
+            <label for="input-telephone" class="offer-form__label">Телефон</label>
+            <div class="offer-form__icon-container">
+              <input id="input-telephone" class="offer-form__input" name="telephone" type="tel">
+              <svg class="offer-form__icon" width="18px" height="18px">
+                <use href="./img/sprite.svg#form-icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="offer-form__label-container">
+            <label for="input-email" class="offer-form__label">Почта</label>
+            <div class="offer-form__icon-container">
+              <input id="input-email" class="offer-form__input" name="email" type="email">
+              <svg class="offer-form__icon" width="18px" height="18px">
+                <use href="./img/sprite.svg#form-icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="offer-form__label-container offer-form__label-container--comments">
+            <label for="input-comments" class="offer-form__label">Комментарий
+            </label>
+            <textarea id="input-comments" class="offer-form__textarea" name="comments" rows="6"
+              placeholder="Введите текст"></textarea>
+          </div>
+      </div>
+      <button type="submit" class="offer-form__button">Отправить</button>
+      </form>
+    </div>
+  </div>
+  </div>
+
+  <div class="backdropII">
+    <div class="modal">
+      <div class="modal__iconII">
         <svg class="modal__icon-link" width="11px" height="11px">
           <use href="./img/sprite.svg#modal__icon"></use>
         </svg>

@@ -1,9 +1,27 @@
 .offer__list {
     padding: 100px 0;
+
+    @media screen and (max-width: $mobile-width) {
+        padding-bottom: 80px;
+    }
 }
 
 .offer__item {
     display: flex;
+
+    @media screen and (max-width: $mobile-width) {
+        display: table;
+        flex-wrap: wrap;
+    }
+}
+
+.offer__image {
+    width: 615px;
+
+    @media screen and (max-width: $mobile-width) {
+        width: 100%;
+
+    }
 }
 
 .offer__modal {
@@ -13,4 +31,19 @@
     text-align: center;
     align-items: center;
     padding: 50px 100px;
+
+    @media screen and (max-width: $mobile-width) {
+        width: 450px;
+        height: 500px;
+    }
+}
+
+.offer__modal-img {
+    width: 100%;
+
+    @media screen and (max-width: $mobile-width) {
+        display: table-header-group;
+        width: 100%;
+    }
+
 }

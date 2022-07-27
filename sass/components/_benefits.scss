@@ -1,5 +1,9 @@
 .benefits {
     background-color: getColor("secondary-fon");
+
+    @media screen and (max-width: $mobile-width) {
+        display: none;
+    }
 }
 
 .benefits-list {

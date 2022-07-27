@@ -17,6 +17,9 @@
 .header__navigation-list {
     display: flex;
 
+    @media screen and (max-width: $mobile-width) {
+        display: none;
+      }
 }
 
 .header__navigation-item {
@@ -40,7 +43,13 @@
 .header__contacts {
     display: flex;
 
+    @media screen and (max-width: $mobile-width) {
+        display: block;
+      }
 
+      &:first-child {
+        margin-bottom: 40px;
+      }
 }
 
 .header__contacts-item {
@@ -48,6 +57,12 @@
     &:first-child {
         margin-right: 40px;
     }
+    @media screen and (max-width: $mobile-width) {
+       
+      &:first-child {
+        margin-bottom: 15px;
+      }
+}
 }
 
 .header__contacts-link {

@@ -1,0 +1,10 @@
+.hero {
+  @media screen and (max-width: $mobile-width) {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
+
+.hero_img {
+  width: 100%;
+}

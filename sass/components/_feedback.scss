@@ -1,6 +1,10 @@
 .feedback {
     background-color: getColor('secondary-fon');
     padding-bottom: 100px;
+
+    @media screen and (max-width: $mobile-width) {
+        display: none;
+    }
 }
 
 .feedback__header {
@@ -17,6 +21,7 @@
 
 .feedback__block {
     text-align: start;
+    width: 370px;
     height: 500px;
     margin-right: 20px;
     border-radius: 10px;
