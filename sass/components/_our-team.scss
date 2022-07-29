@@ -38,6 +38,10 @@
     margin: 0;
 }
 
+.our-team__text {
+    padding: 0 30px;
+}
+
 .our-team__line-top {
     display: none;
     width: 100%;
@@ -68,6 +72,10 @@
     margin: auto;
     margin-bottom: 100px;
     background-color: getColor("contact-text");
+
+    &:hover {
+        background-color: getColor("button");
+    }
 
     @media screen and (max-width: $mobile-width) {
         display:inherit;

@@ -10,18 +10,16 @@
     display: flex;
 
     @media screen and (max-width: $mobile-width) {
-        display: table;
         flex-wrap: wrap;
+       
+        &:last-child {
+            flex-direction: column-reverse;
+        }
     }
 }
 
 .offer__image {
-    width: 615px;
-
-    @media screen and (max-width: $mobile-width) {
-        width: 100%;
-
-    }
+    width: 100%;
 }
 
 .offer__modal {
@@ -30,20 +28,23 @@
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    padding: 50px 100px;
+    padding: 50px 41px;
 
     @media screen and (max-width: $mobile-width) {
         width: 450px;
-        height: 500px;
     }
 }
 
-.offer__modal-img {
-    width: 100%;
+.offer__modal-title {
 
     @media screen and (max-width: $mobile-width) {
-        display: table-header-group;
-        width: 100%;
+        padding-bottom: 100px;
     }
+}
 
+.offer__modal-text {
+
+    @media screen and (max-width: $mobile-width) {
+        padding-bottom: 100px;
+    }
 }
